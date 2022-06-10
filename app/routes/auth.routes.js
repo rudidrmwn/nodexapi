@@ -20,5 +20,6 @@ module.exports = function(app) {
   
   app.post("/api/auth/signin", controller.signin);
   app.post("/api/auth/member", controller.member);
+  app.get("/api/auth/list_member", controller.dataMember);
   app.get("/api/auth/signout", controller.signout);
 };

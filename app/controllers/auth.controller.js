@@ -96,3 +96,12 @@ exports.member = async (req, res) => {
     return res.status(500).send({ message: error.message });
   }
 };
+
+exports.dataMember = async (req, res) => {
+  try {
+      const members = await Member.findAll();
+      return res.status(200).send({data: members});
+  } catch (error) {
+    return res.status(500).send({ message: error.message });
+  }
+};
