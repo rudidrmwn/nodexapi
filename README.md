@@ -31,7 +31,7 @@ NODE API using Express MySQL and JWT
 ### REQUEST :
 ```
 {
-"email":"rudi.darmawan@gmail.com",
+"email":"jono.iskandar@example.com",
 "password":"demo1234"
 }
 ```
