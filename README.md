@@ -603,5 +603,5 @@ NODE API using Express MySQL and JWT
 ]
 
 ```
-User Login
-POST: http://localhost:5000/api/auth/sigout
+### User Logout
+### GET : http://localhost:5000/api/auth/sigout
