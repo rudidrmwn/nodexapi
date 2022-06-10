@@ -34,7 +34,7 @@ REQUEST :
 "password":"demo1234"
 }
 ```
-```
+
 INSERT MEMBER IF CONDITION IF BALANCE < 10.000
 POST: http://localhost:5000/api/auth/member
 REQUEST :
