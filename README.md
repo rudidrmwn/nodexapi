@@ -13,7 +13,7 @@ NODE API using Express MySQL and JWT
 ```
 * npm start
 ```
-### API
+### API ENDPOINT
 ### User Registration
 ### POST: http://localhost:5000/api/auth/signup
 ### REQUEST :
