@@ -604,5 +604,8 @@ NODE API using Express MySQL and JWT
 ]
 
 ```
+
+### Listing member
+### GET : http://localhost:5000/api/auth/list_member
 ### User Logout
 ### GET : http://localhost:5000/api/auth/sigout
