@@ -13,9 +13,9 @@ NODE API using Express MySQL and JWT
 * npm start
 ```
 ### API
-User Registration
-POST: http://localhost:5000/api/auth/signup
-REQUEST :
+### User Registration
+### POST: http://localhost:5000/api/auth/signup
+### REQUEST :
 ```
 {
  "first_name":"Jono",
@@ -25,9 +25,9 @@ REQUEST :
  "confirm_password":"demo1234"
 }
 ```
-User Login
-POST: http://localhost:5000/api/auth/signin
-REQUEST :
+### User Login
+### POST: http://localhost:5000/api/auth/signin
+### REQUEST :
 ```
 {
 "email":"rudi.darmawan@gmail.com",
@@ -35,9 +35,9 @@ REQUEST :
 }
 ```
 
-INSERT MEMBER IF CONDITION IF BALANCE < 10.000
-POST: http://localhost:5000/api/auth/member
-REQUEST :
+### INSERT MEMBER IF CONDITION IF BALANCE < 10.000
+### POST: http://localhost:5000/api/auth/member
+### REQUEST :
 ```
 [
   {
