@@ -80,6 +80,12 @@ exports.signout = async (req, res) => {
 
 exports.member = async (req, res) => {
   try {
+    if (!req.session.token) {
+      res.status(403)
+        .send({
+          message: "Invalid JWT token"
+        });
+    }else{
       var reqBody = req.body;
       reqBody.forEach(element => {
         if(element.details[0].balance < 10000){
@@ -92,6 +98,7 @@ exports.member = async (req, res) => {
         }
       });
       return res.status(200).send({message: "data has been inserted"});
+    }
   } catch (error) {
     return res.status(500).send({ message: error.message });
   }
