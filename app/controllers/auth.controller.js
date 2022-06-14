@@ -81,7 +81,7 @@ exports.signout = async (req, res) => {
 exports.member = async (req, res) => {
   try {
     if (!req.session.token) {
-      res.status(403)
+      return res.status(403)
         .send({
           message: "Invalid JWT token"
         });
@@ -106,8 +106,15 @@ exports.member = async (req, res) => {
 
 exports.dataMember = async (req, res) => {
   try {
+    if (!req.session.token) {
+      return res.status(403)
+        .send({
+          message: "Invalid JWT token"
+        });
+    }else{
       const members = await Member.findAll();
       return res.status(200).send({data: members});
+    }
   } catch (error) {
     return res.status(500).send({ message: error.message });
   }
